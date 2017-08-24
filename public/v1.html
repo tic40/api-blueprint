@@ -3,7 +3,7 @@
 <div class="note">
 <h4 id="header-note">Note <a class="permalink" href="#header-note" aria-hidden="true">¶</a></h4>
 </div>
-<h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users/<span class="hljs-attribute" title="id">1</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1</span></span><p>Id of the account</p>
+<h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users/<span class="hljs-attribute" title="id">1</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1</span></span><p>user id</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>200</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div><h5>Body</h5><pre><code>{
   "<span class="hljs-attribute">id</span>": <span class="hljs-value"><span class="hljs-string">"id"</span></span>,
   "<span class="hljs-attribute">name</span>": <span class="hljs-value"><span class="hljs-string">"name"</span></span>,
@@ -15,9 +15,9 @@
 <div class="note">
 <h4 id="header-note-1">Note <a class="permalink" href="#header-note-1" aria-hidden="true">¶</a></h4>
 </div>
-<h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users?&<span class="hljs-attribute">name=</span><span class="hljs-literal">name</span>&<span class="hljs-attribute">email=</span><span class="hljs-literal">example</span>&<span class="hljs-attribute">type=</span><span class="hljs-literal">student</span>&<span class="hljs-attribute">limit=</span><span class="hljs-literal">10</span>&<span class="hljs-attribute">offset=</span><span class="hljs-literal">10</span>&<span class="hljs-attribute">order_by=</span><span class="hljs-literal">created_at</span>&<span class="hljs-attribute">direction=</span><span class="hljs-literal">desc</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>name</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>name</span></span><p>Name of the Account</p>
-</dd><dt>email</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>example</span></span><p>Email of the Account</p>
-</dd><dt>type</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>student</span></span><p>Type name of the Account</p>
+<h4>Example URI</h4><div class="definition"><span class="method get">GET</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users?&<span class="hljs-attribute">name=</span><span class="hljs-literal">name</span>&<span class="hljs-attribute">email=</span><span class="hljs-literal">example</span>&<span class="hljs-attribute">type=</span><span class="hljs-literal">student</span>&<span class="hljs-attribute">limit=</span><span class="hljs-literal">10</span>&<span class="hljs-attribute">offset=</span><span class="hljs-literal">10</span>&<span class="hljs-attribute">order_by=</span><span class="hljs-literal">created_at</span>&<span class="hljs-attribute">direction=</span><span class="hljs-literal">desc</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>name</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>name</span></span><p>Name</p>
+</dd><dt>email</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>example</span></span><p>Email</p>
+</dd><dt>type</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>student</span></span><p>Type name</p>
 </dd><dt>limit</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>10</span></span><p>Limit for the pagination</p>
 </dd><dt>offset</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>10</span></span><p>Offset for the pagination</p>
 </dd><dt>order_by</dt><dd><code>string</code>&nbsp;<span>(optional)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>created_at</span></span><p>Order key for the order</p>
@@ -58,21 +58,21 @@
 <td>name</td>
 <td>string</td>
 <td>required</td>
-<td>Name of the account</td>
+<td>Name</td>
 <td>name</td>
 </tr>
 <tr>
 <td>email</td>
 <td>string</td>
 <td>required</td>
-<td>Email of the account</td>
+<td>Email</td>
 <td><a href="mailto:example@example.com">example@example.com</a></td>
 </tr>
 <tr>
 <td>password</td>
 <td>string</td>
 <td>required</td>
-<td>Password of the account</td>
+<td>Password</td>
 <td>acb1234</td>
 </tr>
 </tbody>
@@ -98,21 +98,21 @@
 <td>name</td>
 <td>string</td>
 <td>optional</td>
-<td>Name of the account</td>
+<td>Name</td>
 <td>name</td>
 </tr>
 <tr>
 <td>email</td>
 <td>string</td>
 <td>optional</td>
-<td>Email of the account</td>
+<td>Email</td>
 <td><a href="mailto:example@example.com">example@example.com</a></td>
 </tr>
 <tr>
 <td>password</td>
 <td>string</td>
 <td>optional</td>
-<td>Password of the account</td>
+<td>Password</td>
 <td>password</td>
 </tr>
 </tbody>
@@ -120,13 +120,13 @@
 <div class="note">
 <h4 id="header-note-3">Note <a class="permalink" href="#header-note-3" aria-hidden="true">¶</a></h4>
 </div>
-<h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users/<span class="hljs-attribute" title="id">1</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1</span></span><p>Id of the account.</p>
+<h4>Example URI</h4><div class="definition"><span class="method put">PUT</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users/<span class="hljs-attribute" title="id">1</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1</span></span><p>user id.</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>204</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div></div></div></div></div><div id="api--4" class="resource"><h3 class="resource-heading">Resource <a href="#api--4" class="permalink">&nbsp;&para;</a></h3><div id="api-delete" class="action delete"><h4 class="action-heading"><div class="name"></div><a href="#api-delete" class="method delete">DELETE</a><code class="uri">/v1/users/{id}</code></h4><h3 id="header-description-4">description <a class="permalink" href="#header-description-4" aria-hidden="true">¶</a></h3>
 <p>Delete the user</p>
 <div class="note">
 <h4 id="header-note-4">Note <a class="permalink" href="#header-note-4" aria-hidden="true">¶</a></h4>
 </div>
-<h4>Example URI</h4><div class="definition"><span class="method delete">DELETE</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users/<span class="hljs-attribute" title="id">1</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1</span></span><p>Id of the account.</p>
+<h4>Example URI</h4><div class="definition"><span class="method delete">DELETE</span>&nbsp;<span class="uri"><span class="hostname">https://api.example.com</span>/v1/users/<span class="hljs-attribute" title="id">1</span></span></div><div class="title"><strong>URI Parameters</strong><div class="collapse-button show"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><dl class="inner"><dt>id</dt><dd><code>number</code>&nbsp;<span class="required">(required)</span>&nbsp;<span class="text-muted example"><strong>Example:&nbsp;</strong><span>1</span></span><p>user id.</p>
 </dd></dl></div><div class="title"><strong>Response&nbsp;&nbsp;<code>204</code></strong><div class="collapse-button"><span class="close">Hide</span><span class="open">Show</span></div></div><div class="collapse-content"><div class="inner"><h5>Headers</h5><pre><code><span class="hljs-attribute">Content-Type</span>: <span class="hljs-string">application/json</span></code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 24 Aug 2017</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';

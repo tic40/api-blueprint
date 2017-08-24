@@ -8,7 +8,7 @@ Fetch the user
 :::
 
 + Parameters
-    + id : 1 (number, required) - Id of the account
+    + id : 1 (number, required) - user id
 
 + Response 200 (application/json)
     + Body
@@ -31,9 +31,9 @@ Search users
 :::
 
 + Parameters
-    + name : name (string, optional) - Name of the Account
-    + email : example (string, optional) - Email of the Account
-    + type : student (string, optional) - Type name of the Account
+    + name : name (string, optional) - Name
+    + email : example (string, optional) - Email
+    + type : student (string, optional) - Type name
     + limit : 10 (number, required) - Limit for the pagination
     + offset : 10 (number, required) - Offset for the pagination
     + `order_by` : `created_at` (string, optional) - Order key for the order
@@ -70,9 +70,9 @@ Create an user
 ### body params
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
-name | string | required | Name of the account | name
-email | string | required | Email of the account | example@example.com
-password | string | required | Password of the account | acb1234
+name | string | required | Name | name
+email | string | required | Email | example@example.com
+password | string | required | Password | acb1234
 
 :::note
 #### Note
@@ -89,16 +89,16 @@ Update the users
 ### body params
 Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
-name | string | optional | Name of the account | name
-email | string | optional | Email of the account | example@example.com
-password | string | optional | Password of the account | password
+name | string | optional | Name | name
+email | string | optional | Email | example@example.com
+password | string | optional | Password | password
 
 :::note
 #### Note
 :::
 
 + Parameters
-    + id : 1 (required, number) - Id of the account.
+    + id : 1 (required, number) - user id.
 
 + Response 204 (application/json)
 
@@ -113,6 +113,6 @@ Delete the user
 :::
 
 + Parameters
-    + id : 1 (required, number) - Id of the account.
+    + id : 1 (required, number) - user id.
 
 + Response 204 (application/json)
