@@ -21,7 +21,7 @@ Fetch the user
         }
 
 
-## GET /v1/users?{&name,email,type,limit,offset,order_by,direction}
+## GET /v1/users?{&name,email,limit,offset,order_by,direction}
 
 ### description
 Search users
@@ -33,7 +33,6 @@ Search users
 + Parameters
     + name : name (string, optional) - Name
     + email : example (string, optional) - Email
-    + type : student (string, optional) - Type name
     + limit : 10 (number, required) - Limit for the pagination
     + offset : 10 (number, required) - Offset for the pagination
     + `order_by` : `created_at` (string, optional) - Order key for the order
