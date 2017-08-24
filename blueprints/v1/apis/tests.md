@@ -1,7 +1,7 @@
-## GET /v1/account/accounts/{id}
+## GET /v1/users/{id}
 
 ### description
-Fetch account information by id
+Fetch the user
 
 :::note
 #### Note
@@ -16,17 +16,15 @@ Fetch account information by id
             "id": "id",
             "name": "name",
             "email": "example@example.com",
-            "type_id": "1",
-            "type_name": "student",
             "created_at": "2017-08-23 00:43:21",
             "updated_at": "2017-08-23 00:43:21"
         }
 
 
-## GET /v1/account/accounts?{&name,email,type,limit,offset,order_by,direction}
+## GET /v1/users?{&name,email,type,limit,offset,order_by,direction}
 
 ### description
-Search accounts
+Search users
 
 :::note
 #### Note
@@ -45,13 +43,11 @@ Search accounts
     + Body
         {
             "total_count": "2",
-            "accounts": [
+            "users": [
                 {
                     "id": "id",
                     "name": "name",
                     "email": "example@example.com",
-                    "type_id": "1",
-                    "type_name": "student",
                     "created_at": "2017-08-23 00:43:21",
                     "updated_at": "2017-08-23 00:43:21"
                 },
@@ -59,8 +55,6 @@ Search accounts
                     "id": "id",
                     "name": "name",
                     "email": "example2@example.com",
-                    "type_id": "2",
-                    "type_name": "tutor",
                     "created_at": "2017-08-23 00:43:21",
                     "updated_at": "2017-08-23 00:43:21"
                 }
@@ -68,33 +62,10 @@ Search accounts
         }
 
 
-## GET /v1/account/students/{id}
+## POST /v1/users
 
 ### description
-Fetch student information by id
-
-:::note
-#### Note
-:::
-
-+ Parameters
-    + id : 1 (number, required) - Id of the accounts.
-
-+ Response 200 (application/json)
-    + Body
-        {
-            "id": "id",
-            "name": "name",
-            "email": "example@example.com",
-            "created_at": "2017-08-23 00:43:21",
-            "updated_at": "2017-08-23 00:43:21"
-        }
-
-
-## POST /v1/account/students
-
-### description
-Create student account
+Create an user
 
 ### body params
 Name | Type | Required | Description | Example
@@ -110,10 +81,10 @@ password | string | required | Password of the account | acb1234
 + Response 201 (application/json)
 
 
-## PUT /v1/account/students/{id}
+## PUT /v1/users/{id}
 
 ### description
-Update student account
+Update the users
 
 ### body params
 Name | Type | Required | Description | Example
@@ -132,88 +103,10 @@ password | string | optional | Password of the account | password
 + Response 204 (application/json)
 
 
-## DELETE /v1/account/students/{id}
+## DELETE /v1/users/{id}
 
 ### description
-Delete student account
-
-:::note
-#### Note
-:::
-
-+ Parameters
-    + id : 1 (required, number) - Id of the account.
-
-+ Response 204 (application/json)
-
-
-## GET /v1/account/tutors/{id}
-
-### description
-Fetch tutor account information by id
-
-:::note
-#### Note
-:::
-
-+ Parameters
-    + id : 1 (number, required) - Id of the accounts.
-
-+ Response 200 (application/json)
-    + Body
-        {
-            "id": "id",
-            "name": "name",
-            "email": "example@example.com",
-            "created_at": "2017-08-23 00:43:21",
-            "updated_at": "2017-08-23 00:43:21"
-        }
-
-
-## POST /v1/account/tutors
-
-### description
-Create tutor account
-
-### body params
-Name | Type | Required | Description | Example
---- | --- | --- | --- | ---
-name | string | required | Name of the account | name
-email | string | required | Email of the account | example@example.com
-password | string | required | Password of the account | acb1234
-
-:::note
-#### Note
-:::
-
-+ Response 201 (application/json)
-
-
-## PUT /v1/account/tutors/{id}
-
-### description
-Update tutor account
-
-### body params
-Name | Type | Required | Description | Example
---- | --- | --- | --- | ---
-name | string | optional | Name of the account | name
-email | string | optional | Email of the account | example@example.com
-password | string | optional | Password of the account | password
-
-:::note
-#### Note
-:::
-
-+ Parameters
-    + id : 1 (required, number) - Id of the account.
-
-+ Response 204 (application/json)
-
-## DELETE /v1/account/tutors/{id}
-
-### description
-Delete tutor account
+Delete the user
 
 :::note
 #### Note
