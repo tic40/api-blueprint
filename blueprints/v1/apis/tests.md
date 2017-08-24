@@ -13,7 +13,7 @@ Fetch the user
 + Response 200 (application/json)
     + Body
         {
-            "id": "id",
+            "id": 1,
             "name": "name",
             "email": "example@example.com",
             "created_at": "2017-08-23 00:43:21",
@@ -44,14 +44,14 @@ Search users
             "total_count": "2",
             "users": [
                 {
-                    "id": "id",
+                    "id": 1,
                     "name": "name",
                     "email": "example@example.com",
                     "created_at": "2017-08-23 00:43:21",
                     "updated_at": "2017-08-23 00:43:21"
                 },
                 {
-                    "id": "id",
+                    "id": 2,
                     "name": "name",
                     "email": "example2@example.com",
                     "created_at": "2017-08-23 00:43:21",
