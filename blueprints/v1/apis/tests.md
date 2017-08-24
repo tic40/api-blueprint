@@ -71,7 +71,7 @@ Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
 name | string | required | Name | name
 email | string | required | Email | example@example.com
-password | string | required | Password | acb1234
+password | string | required | Password | password
 
 :::note
 #### Note
@@ -90,7 +90,6 @@ Name | Type | Required | Description | Example
 --- | --- | --- | --- | ---
 name | string | optional | Name | name
 email | string | optional | Email | example@example.com
-password | string | optional | Password | password
 
 :::note
 #### Note
