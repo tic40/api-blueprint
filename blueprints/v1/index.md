@@ -1,7 +1,7 @@
 FORMAT: 1A
 HOST: https://api.example.com
 
-# Account Service v1
+# API TITLE HERE
 
 # Group API
 <!-- include(apis/tests.md) -->
